@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
     // Filter and sort the anagram groups
     // change the count number to check the anagram. for better responding i have written this >5
     $filteredGroups = array_filter($anagramGroups, function($group) {
-        return count($group) > 4;
+        return count($group) > 2;
     });
     
     usort($filteredGroups, function($a, $b) {
@@ -76,4 +76,3 @@ if (isset($_POST['submit'])) {
     <script src="advance.js"></script>
 </body>
 </html>
-
