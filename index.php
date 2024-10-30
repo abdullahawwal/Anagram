@@ -51,12 +51,12 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Abdullah Awwal, php Web Developer" name="keywords">
-    <title>Anagram Finder</title>
+    <title>Anagram Finder by Abdullah</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Upload Dictionary File</h1>
+        <h1>Upload A Dictionary File</h1>
         <form id="uploadForm" method="POST" enctype="multipart/form-data">
             <input type="file" name="dictionary" accept=".txt" required>
             <button type="submit" name="submit">Find Anagrams</button>
