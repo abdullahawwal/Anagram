@@ -1,0 +1,114 @@
+/* Reset and font settings */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.result {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.container.visible, .result.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #182848;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* File input */
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f3f3f3;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    background-color: #4b6cb7;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #182848;
+}
+
+/* Loader */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4b6cb7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Result text */
+.result p {
+    text-align: justify;
+}
